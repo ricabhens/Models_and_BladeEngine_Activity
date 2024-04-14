@@ -5,8 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\QueryException;
+//use Illuminate\Support\Facades\DB;
+//use Illuminate\Database\QueryException;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Book::factory(20)->create();
+        //\App\Models\Book::factory(20)->create();
 
         User::factory()->create([
             'name' => 'Test User',

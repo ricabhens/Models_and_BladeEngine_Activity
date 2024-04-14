@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 
 
 Route::get('/', function () {
-    return view('book');
+    return view('welcome');
 });
 
-Route::get('/book', [BookController::class, 'index']);
+
+Route::get('/Book', [BookController::class, 'Show']);
+
