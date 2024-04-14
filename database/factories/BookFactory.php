@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Book>
@@ -21,7 +22,7 @@ class BookFactory extends Factory
             'isbn' => fake()->randomNumber(),
             'title' => fake()->text(50),
             'author' => fake()->name(),
-            'description' => fake()->text(280),
+            'description' => fake()->text(50),
             'date_published' => fake()->dateTime(),
         ];
     }
